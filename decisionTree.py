@@ -1,7 +1,3 @@
-# Author Francois Mukaba
-# Course: Machine Learning
-# Date : 10/17/19
-
 
 import pandas as pd
 import math
