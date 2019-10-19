@@ -144,36 +144,3 @@ testing_data = pd.read_csv("C:/Users/fxkik/OneDrive/Documents/CS stuffs/Bachelor
 decision_tree_model = ID3.build_tree(training_data)
 # print accurracy
 calculate_accuracy(testing_data, decision_tree_model)
-
-#
-# def draw_decision_tree_dictionary(tree_dictionary, features_list):
-#     if not isinstance(tree_dictionary, dict):
-#         raise TypeError("Argument tree_dictionary must be of type dictionary")
-#     if not tree_dictionary:
-#         raise ValueError("Dictionary tree_dictionary is empty")
-#
-#     dot = Digraph(strict=True)
-#     draw_tree(dot, features_list, tree_dictionary, None)
-#
-#     return dot
-#
-#
-# def draw_tree(dot, features_list, tree_dictionary, parent_node_name):
-#     if isinstance(tree_dictionary, dict):
-#         for key in tree_dictionary:
-#             no_spaces_key = str(key).replace(" ", "")
-#
-#             dot.node(no_spaces_key, str(key), shape="ellipse")
-#
-#             if parent_node_name != None:
-#                 dot.edge(parent_node_name, no_spaces_key)
-#
-#             draw_tree(dot, features_list, tree_dictionary[key], no_spaces_key)
-#     else:
-#         val = str(tree_dictionary)
-#         dot.node(val, val, shape="plaintext")
-#         dot.edge(parent_node_name, val)
-#
-#  # dot = draw_decision_tree_dictionary(dictionary, attr_list)
-#  # dot.render('mytree.gv', view=True)
-#
