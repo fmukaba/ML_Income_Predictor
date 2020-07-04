@@ -4,5 +4,6 @@
 ### What I learned:
   
     Decision Trees  
+    ID3 Algorithm
     Jupyter Notebook
     
